@@ -8,10 +8,11 @@
  * Controller of the kProjectApp
  */
 angular.module('kProjectApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
+    .controller('MainCtrl', function ($scope) {
+        $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-  });
+
+    });
