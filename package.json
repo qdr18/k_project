@@ -1,7 +1,10 @@
 {
   "name": "kproject",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "loopback-connector-mssql": "^1.5.1",
+    "loopback-datasource-juggler": "^2.22.0"
+  },
   "repository": {},
   "devDependencies": {
     "grunt": "^0.4.5",

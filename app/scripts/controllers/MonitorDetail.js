@@ -2,7 +2,7 @@
 
 /**
  * @ngdoc function
- * @name kProjectApp.controller:MainCtrl
+ * @name kProjectApp.controller:MonitorDetailCtrl
  * @description
  * # MonitorDtailCtrl
  * Controller of the kProjectApp

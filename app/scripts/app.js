@@ -31,6 +31,14 @@ angular
                 templateUrl: 'views/MonitorDetail.html',
                 controller: 'MonitorDetailCtrl'
             })
+            .when('/EventDataRecord', {
+                templateUrl: 'views/EventDataRecord.html',
+                controller: 'EventDataRecordCtrl'
+            })
+            .when('/DigitalVideo', {
+                templateUrl: 'views/DigitalVideo.html',
+                controller: 'DigitalVideoCtrl'
+            })
             .otherwise({
                 redirectTo: '/'
             });
