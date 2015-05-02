@@ -14,10 +14,11 @@ angular
     'ngCookies',
     'ngResource',
     'ngRoute',
+    'lbServices',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
   ])
-    .config(function ($routeProvider) {
+    .config(function ($provide, $routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'views/main.html',
@@ -27,17 +28,21 @@ angular
                 templateUrl: 'views/about.html',
                 controller: 'AboutCtrl'
             })
-            .when('/MonitorDetail', {
+            .when('/MonitorDetail/', {
                 templateUrl: 'views/MonitorDetail.html',
                 controller: 'MonitorDetailCtrl'
             })
-            .when('/EventDataRecord', {
+            .when('/EventDataRecord/', {
                 templateUrl: 'views/EventDataRecord.html',
                 controller: 'EventDataRecordCtrl'
             })
-            .when('/DigitalVideo', {
+            .when('/DigitalVideo/', {
                 templateUrl: 'views/DigitalVideo.html',
                 controller: 'DigitalVideoCtrl'
+            })
+            .when('/CameraList/', {
+                templateUrl: 'views/CameraList.html',
+                controller: 'CameraListCtrl'
             })
             .otherwise({
                 redirectTo: '/'

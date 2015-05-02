@@ -1,0 +1,45 @@
+<div class="CameraList_global_container" ng-control="CameraListCtrl">
+    <div class="col-md-offset-1 col-md-9 inner_container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-body">
+                <div>
+                    <h4 class="col-md-8" style="text-align:center;">台中市政府警察局 各分局監控系統清單＿建置期別排序</h4>
+                    <button type="button" class="btn btn-primary col-md-offset-2 col-md-2" ng-click="BackToLastPage()">返回上一層</button>
+                </div>
+            </div>
+            <!-- Table -->
+            <table class="table table-bordered ">
+                <tr>
+                    <td>編號</td>
+                    <td>分局</td>
+                    <td>派出所排序</td>
+                    <td>建置編號</td>
+                    <td>主機位置</td>
+                    <td>連結位址</td>
+                </tr>
+                <tr ng-repeat="camera in Camera_lists | limitTo:TotalDisplayed">
+                    <td>
+                        <span ng-bind=""></span>
+                    </td>
+                    <td>
+                        <span ng-bind="camera.branchname"></span>
+                    </td>
+                    <td>
+                        <span ng-bind="camera.Policestation"></span>
+                    </td>
+                    <td>
+                        <span ng-bind="camera.buildnumber"></span>
+                    </td>
+                    <td>
+                        <span ng-bind="camera.direction"></span>
+                    </td>
+                    <td>
+                        <span ng-bind="camera.ip"></span>
+                    </td>
+                </tr>
+            </table>
+            <button class="btn" ng-click="loadMore()">Load more</button>
+        </div>
+    </div>
+</div>
